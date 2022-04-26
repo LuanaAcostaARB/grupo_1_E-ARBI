@@ -21,7 +21,6 @@ Fuera del proyecto trabajamos en los ejercicios nuevos de JS y también hicimos 
 <br>
 
 ## 19/04:
-
 •  Evaluación de JS y segunda charla de ideas sobre la estética de la página para ya empezar con una idea contundente en el wireframe.	
 <br>
 
