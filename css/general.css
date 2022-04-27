@@ -1,0 +1,20 @@
+:root{    /* creamos variables con :root para que podamos poner colores con nombres mas faciles */
+   
+    --color-violetaFuerte: #260B2C;
+    --color-rosa: #FE82CA;
+    --color-blanco: #ffffff;
+    --color-lila: #A25DA5;
+    --color-magenta: #86126A
+}
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Anonymous Pro', monospace;
+    color: var(--color-blanco);
+}
+a{
+    text-decoration: none;
+}
