@@ -9,45 +9,76 @@
     <title>Curso JS</title>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="..." alt="logo"> 
-        </div>
-       <div>
-           <button> Menú </button>
-       </div>
-        
-        <div>
-            <img src="..." alt="avatar">
-            <div>
-                <span>
-                    Menganito Juarez
-                </span>
+    <header class="elheader"> <!--header cuando el usuario no está logueado-->
+        <nav class="elnav">
+            <div class="div1MAIN">
+                <img src="../imgs/_Logo E-Arbi.png" alt="Logo de E-arbi" srcset="" class="logo">
             </div>
-        </div>
+                <ul class="menu_links">
+                    <li class="link1">
+                        <a href="#" class="subitemul">Cursos</a>
+                        <ul class="subitems">
+                            <li class="item">
+                                <a href="../HTML/cursoCSS.html" class="subitemul">CSS</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cursoHTML.html" class="subitemul">HTML</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cursoSQL.html" class="subitemul">SQL</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cursojs.html" class="subitemul">JS</a>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="link1"> 
+                        <a href="#" class="subitemul">Equipo</a>
+                        <ul class="subitems">
+                            <li class="item5">
+                                <a href="../HTML/equipo.html" class="subitemul">Profesionales</a>
+                            </li>
+                            <li class="item6">
+                                <a href="../HTML/Alumnos.html" class="subitemul">Alumnos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link1"><a href="./conocenos.html" class="subitemul">Conocenos</a></li>
+                </ul>
+            <div class="div3MAIN">
+                <button>Log in</button>
+            </div>
+        </nav>
     </header>
     <main>
         <section>
+            <div class="image">
+                <img src="/imgs/javascript.png" alt="imagen-ilustrativa-javascript">
+            </div>
             <div class="card">
-                <h1>
+                <div class="titulo">
+                    <h1>
                     Curso JS
-                </h1>
-                <h3>
+                    </h1>
+                </div>
+                <div class="info">
+                    <h3>
                     Info
                 </h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error fugiat quo minus adipisci dolores natus officia quae dolorum vel? At sed incidunt ducimus error necessitatibus odit ipsa, neque dolores labore!
                 </p>
+                <div class="boton">
                 <button>
                     Inscribirse
                 </button>
-            </div>
-            <div class="image">
-                <img src="..." alt="imagen-ilustrativa">
+                </div>
+                
+                </div>
             </div>
         </section>
         <section>
-            <article>
+            <article class="contenido">
                 <h4>
                     Contenidos del Curso
                 </h4>
@@ -55,7 +86,7 @@
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi laudantium cumque magni repellendus saepe maiores, sapiente facere officiis voluptatum neque rem laborum quae deleniti corporis officia ea harum dolorem fugiat, odio eaque quia? Temporibus, eveniet sit saepe dolore praesentium hic nobis atque, aliquid minima corrupti incidunt modi ipsa dolor quidem?
                 </p>
             </article>
-            <article>
+            <article class="caja">
                 <h3>
                     Tecnologías a usar
                 </h3>
