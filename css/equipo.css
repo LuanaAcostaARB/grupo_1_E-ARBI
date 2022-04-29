@@ -1,0 +1,173 @@
+.elheader{
+    background-color: rgb(150, 23, 150);
+}
+.logo{
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 0px;
+}
+.elnav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.menu_links{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 25px;
+    display: block;
+}
+.subitems{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+.subitems{
+    position: absolute;
+    background:var(--color-magenta);
+    align-items: center;
+}
+.subitemul:hover{
+    background-color: rgb(45, 15, 44);
+}
+.link1{
+    width: 180px;
+    position: relative;
+}
+.subitems{
+    position: absolute;
+    top: 0;
+}
+.subitems{
+    display: none;
+}
+.link1:hover>ul{
+    display: block;
+}
+body{
+    background-color:#260B2C;
+    color:aliceblue;
+    font-family: 'Anonymous Pro', monospace;
+}
+.titulo{
+    display:flex;
+}
+.equipo{
+    justify-content:right ;
+    margin-top:20px;
+    text-align: right;
+    flex-basis:60%;
+    height: 200px;
+}
+.titulo1{
+    text-align: center;
+    margin-top:40px;
+    font-size: 30px;
+    margin-right:50px;
+}
+.animate{
+    text-align: center;
+    margin-right: 50px;
+}
+.clase{
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px #A25DA5,
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+   background-color: black;
+   width: 550px;
+   height:200px;
+   margin-inline-start: auto;
+   margin-bottom: 10px;
+}
+.img1{
+    margin-top: 60px;
+    flex-basis:40%;
+}
+.logov{
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px #A25DA5,
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    height:200px;
+    width:200px;
+}
+.profesores{
+    text-align: center;
+}
+.perfiles{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Gaby{
+    display:flex;
+    justify-content: right;
+    text-align: center;
+    flex-basis:50%;
+}
+.gaby2{
+    padding:25px;
+    margin-left:auto;
+   width:300px;
+   height:500px;
+}
+.Gabriel{
+    border-radius: 100px;
+}
+.Tali{
+    display:flex;
+    text-align: center;
+    flex-basis:50%;
+}
+.tali2{
+    margin-right:auto;
+    justify-content: center;
+    width:300px;
+   height:500px;
+   padding:25px;
+}
+.Talia{
+    border-radius:100px;
+}
+.botones{
+    display:flex;
+}
+a{ color: white;
+    text-decoration: none;
+}
+button{
+    background-color:#A25DA5;
+}
+.boton1{
+    text-align:right;
+    margin-left:auto;
+    flex-basis:50%;
+}
+.boton2{
+    padding-left: 50px;
+    margin-right: auto;
+    flex-basis:50%;
+}
+@media (max-width:891px){
+    .animate{
+        font-size:larger;
+    }
+    .profesores{
+        font-size:xx-large;
+        justify-content: center;
+    }
+    .perfiles{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tali2{
+        margin-left: auto;
+    }
+}

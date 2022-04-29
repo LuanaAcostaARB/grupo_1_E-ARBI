@@ -5,10 +5,19 @@ body{
 header{
     background-color: var(--color-magenta);
 }
-
-section{
+main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+/* section{
+    display: flex;
+    flex-direction: column;
+    
+} */
+section p{
+    font-size: 12px;
 }
 
  .image{
@@ -20,6 +29,7 @@ img{
     border-radius: 10px;
 }
 .card{
+    justify-content: center;
     margin-top: 20px;
 }
 .titulo{
@@ -35,6 +45,8 @@ img{
 
 .info{
     margin: 15px 10px 20px 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
 }
@@ -47,8 +59,7 @@ img{
 }
 
 .boton{
-    /* margin-left: 50px; */
-    justify-content: center;
+    margin-left: 100px;
 }
 
 
@@ -102,7 +113,7 @@ img{
 }
 
 .contenido{
-    margin: 10px 10px 10px 20px
+    margin: 30px 10px 10px 20px
 }
 
 .contenido h4{
@@ -111,9 +122,50 @@ img{
 }
 
 .caja{
-    margin: 10px 10px 10px 20px;
+   
+    margin: 10px 10px 10px 30px;
     text-align: center;
 }
+.logosc{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+}
+#vs{
+    margin-top: 20px;
+    width: 50%;
+}
+#node{
+    width: 50%;
+}
+
+footer{
+    background-color: var(--color-lila);
+    padding: 10px;
+    font-size: 10px;
+}
+
+@media (min-width:361px){
+
+    .image{
+        width: 70%;
+        align-self: center;
+    }
+    
+    .card{
+        align-items: center;
+    }
+    /* .titulo{
+       width: 150px;
+       height: 75px;
+    } */
+    .titulo h1{
+        
+       text-align: center;
+    }
+}
+
 
 
 

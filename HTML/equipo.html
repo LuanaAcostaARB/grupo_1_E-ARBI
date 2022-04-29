@@ -5,47 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipo E-Arbi</title>
+    <link href="/css/equipo.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <!-- espacio reservado para el nav-->
+    <header class="elheader"> <!--header cuando el usuario no está logueado-->
+        <nav class="elnav">
+            <div class="div1MAIN">
+                <img src="../imgs/_Logo E-Arbi.png" alt="Logo de E-arbi" srcset="" class="logo">
+            </div>
+                <ul class="menu_links">
+                    <li class="link1">
+                        <a href="#" class="subitemul">Cursos</a>
+                        <ul class="subitems">
+                            <li class="item">
+                                <a href="../HTML/cursoCSS.html" class="subitemul">CSS</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cursoHTML.html" class="subitemul">HTML</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cursoSQL.html" class="subitemul">SQL</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cursojs.html" class="subitemul">JS</a>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="link1"> 
+                        <a href="#" class="subitemul">Equipo</a>
+                        <ul class="subitems">
+                            <li class="item5">
+                                <a href="../HTML/equipo.html" class="subitemul">Profesionales</a>
+                            </li>
+                            <li class="item6">
+                                <a href="../HTML/Alumnos.html" class="subitemul">Alumnos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link1"><a href="./conocenos.html" class="subitemul">Conocenos</a></li>
+                </ul>
+            <div class="div3MAIN">
+                <button>Log in</button>
+            </div>
+        </nav>
+    </header>
 
 
-    <div><center>
-      <H1> E-Arbi</H1>
-      <p>Animate a dar el salto a la industria IT con nuestros cursos de E-learning. Vas a encontrar todo de manera 100% online, con clases grabadas, ejercicios y evaluaciones.También vas a poder consultar con tus profesores de manera online, no necesitas nada más que una computadora para cambiar tu vida. Te invitamos a conocer a nuestro equipo a continuación:</p>
-      <img src="./Img/logo.png" alt="logo" with="200px" height="200px">
-     </center>
+    
+    <div class="titulo">
+
+
+      <div class="equipo"> 
+         <div class="clase">
+         <div class="titulo1">
+           <h1>Nuestro Equipo</h1>
+         </div>
+         <div class="animate">
+           <p>Da el salto a la industria IT con nuestros cursos</p>
+         </div>
+        </div> 
+      </div> 
+
+      <div class="img1">
+         <img class="logov" src="../imgs/_Logo E-Arbi.png" alt="logo" >
+      </div>
+
     </div>
+
+<!-- finalizan los divs del título-->
      
-    <div> <!-- Este tiene un div aparte para poder moverlo a gusto -->
-    <center><h2>Profesores:</h2></center> <!-- Es un título que iría centrado arriba de los perfiles-->
+    <div class="profesores"> <!-- Este tiene un div aparte para poder moverlo a gusto -->
+        <h2>Profesores:</h2> <!-- Es un título que iría centrado arriba de los perfiles-->
     </div>
     
-
-    <div type="perfiles"> <center>
+    <div class="perfiles1">
+    <div class="perfiles"> 
         
-        <div type="Gaby">
+        <div class="Gaby">
+        <div class="gaby2">
         <h3>Gabriel Muñoz</h3>
-        <img type="Gabriel" src="./Img/Gaby.jpg" alt="Imagen de Gabriel" width="200px" height="200px"> <!--con Css arreglamos medidas, en círculo-->
+        <img class="Gabriel" src="../imgs/Gaby.jpg" alt="Imagen de Gabriel" width="200px" height="200px"> <!--con Css arreglamos medidas, en círculo-->
         <div>
-            <p>Programador Web. Creador de "Programación a la Gorra" - Profesor en: Arbusta / Codo a Codo y Da Vinci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatem eos autem tempora, dolor architecto laudantium excepturi libero illum suscipit, nulla quibusdam veritatis, quos laboriosam id at recusandae neque quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic ipsam veritatis reprehenderit laboriosam! Porro labore magni ex, officiis animi minima explicabo nisi sint est a id quo eligendi aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facilis quasi tenetur cum sint laborum? Dicta libero eveniet architecto sequi expedita maxime corrupti reprehenderit ipsam impedit, in, similique nam deleniti.</p>
+            <p>Programador Web. Creador de "Programación a la Gorra" - Profesor en: Arbusta / Codo a Codo y Da Vinci. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus perferendis officia assumenda commodi maiores ipsa atque facere molestias dolorem enim consectetur id libero fuga iste voluptates unde, obcaecati quas sapiente.</p>
         </div> 
         </div>
+        </div>
 
-        <div type="Tali">
+        <div class="Tali">
+        <div class="tali2">
         <h3>Talia Rodriguez</h3>
-        <img type="Talia" src="./Img/talia.jpg" alt="Imagen de Talia" with="200px" height="200px"> <!--Con css arreglamos medidas, en círculo-->
+        <img class="Talia" src="../imgs/talia.jpg" alt="Imagen de Talia" with="200px" height="200px"> <!--Con css arreglamos medidas, en círculo-->
             <div>
-                Docente - Analista Programador en Desarrolla de App- Desarrolladora Full Stack. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatem eos autem tempora, dolor architecto laudantium excepturi libero illum suscipit, nulla quibusdam veritatis, quos laboriosam id at recusandae neque quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic ipsam veritatis reprehenderit laboriosam! Porro labore magni ex, officiis animi minima explicabo nisi sint est a id quo eligendi aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facilis quasi tenetur cum sint laborum? Dicta libero eveniet architecto sequi expedita maxime corrupti reprehenderit ipsam impedit, in, similique nam deleniti.
+               <p> Docente - Analista Programador en Desarrolla de App- Desarrolladora Full Stack. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex iure, assumenda, facilis, minus iste doloribus aut doloremque quis autem rerum enim quas vel deserunt recusandae. Esse dolorem ipsam autem et!</p>
             </div> 
         </div>
-        </center>
+        </div>    
+    
+    
+    
     </div>
 
-   <div type="botones"> 
-    <button><a href=Alumnos.html>Conocé a nuestros alumnos</a></button>
-    <button><a href=conocenos.html> Conocé más sobre nosotros</a></button>
+   <div class="botones"> 
+        <div class="boton1">
+             <a href=Alumnos.html>Conocé a nuestros alumnos</a>
+        </div>
+
+        <div class="boton2">
+            <a href=conocenos.html> Conocé más sobre nosotros</a>
+        </div>
+
+  
    </div>
+   
+
+
+
 
    <!--Espacio resrvado para el footer-->
 </body>
