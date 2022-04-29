@@ -1,0 +1,115 @@
+body{
+    background-color: var(--color-violetaFuerte);
+}
+.elheader{
+    background:linear-gradient(to bottom, var(--color-magenta) 5%, #883878 100%);
+}
+.logo{
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 0px;
+}
+.elnav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.menu_links{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.subitemul{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 25px;
+    display: block;
+}
+.subitems{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+.subitems{
+    position: absolute;
+    background:var(--color-magenta);
+    align-items: center;
+}
+.subitemul:hover{
+    background-color: rgb(30, 12, 40);
+}
+.link1{
+    width: 180px;
+    position: relative;
+}
+.subitems{
+    position: absolute;
+    top: 0;
+}
+.subitems{
+    display: none;
+}
+.link1:hover>ul{
+    display: block;
+}
+.trigger{
+    
+        box-shadow: 0px 10px 14px -7px #6b1a5f;
+        background:linear-gradient(to bottom, #a6578a 5%, #bd4ca6 100%);
+        background-color:#a6578a;
+        border-radius:8px;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:20px;
+        font-weight:bold;
+        padding:13px 32px;
+        text-decoration:none;
+}
+.trigger:hover {
+        background:linear-gradient(to bottom, #bd4ca6 5%, #a6578a 100%);
+        background-color:#bd4ca6;
+    }
+.trigger:active {
+        position:relative;
+        top:1px;
+    }
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.186);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup{
+    height: 400px;
+    width: 550px;
+    background: radial-gradient(var(--color-rosa), rgb(204, 70, 224) );
+    padding:0 30px;
+    border-radius: 24px;
+    position: relative;
+    box-shadow:  0 5px 10px 10px rgba(90, 15, 90, 0.592);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.div-login-1{
+    margin-left: 10px;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 45px;
+    height: 100%;
+    text-align: center;
+}

@@ -4,22 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/general.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>E-ARBI</title>
 </head>
 <body>
-    <header> <!--header cuando el usuario no está logueado-->
-        <nav>
+    <header class="elheader"> <!--header cuando el usuario no está logueado-->
+        <nav class="elnav">
             <div class="div1MAIN">
-                <img src="../grupo_1_E-ARBI/imgs/_Logo E-Arbi.png" alt="Logo de E-arbi" srcset="" class="logo">
+                <img src="../imgs/_Logo E-Arbi.png" alt="Logo de E-arbi" srcset="" class="logo">
             </div>
-            <div class="div2MAIN">
-                <button>Menú</button>
-            </div>
+                <ul class="menu_links">
+                    <li class="link1">
+                        <a href="#" class="subitemul">Cursos</a>
+                        <ul class="subitems">
+                            <li class="item">
+                                <a href="../HTML/cursoCSS.html" class="subitemul">CSS</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cursoHTML.html" class="subitemul">HTML</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cusoSQL.html" class="subitemul">SQL</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cursojs.html" class="subitemul">JS</a>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="link1"> 
+                        <a href="#" class="subitemul">Equipo</a>
+                        <ul class="subitems">
+                            <li class="item5">
+                                <a href="../HTML/equipo.html" class="subitemul">Profesionales</a>
+                            </li>
+                            <li class="item6">
+                                <a href="../HTML/Alumnos.html" class="subitemul">Alumnos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link1"><a href="./conocenos.html" class="subitemul">Conocenos</a></li>
+                </ul>
             <div class="div3MAIN">
-                <button>Log in</button>
+                <button href="#popup" class="trigger">Log in</button>
             </div>
         </nav>
     </header>
+                <div class="overlay">
+                    <div class="popup">
+                        <a href="" class="close"></a>
+                        <div class="column"></div>
+                            <form class="login">
+                                <div class="div-login-1">
+                                    <h1>Ingresar con...</h1>
+                                </div>
+                                <div class="div-login-2">
+                                    <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="botoncito"><i class="fa-brands fa-google"></i></a>                                    
+                                    <a href="https://www.facebook.com/" class="botoncito"><i class="fa-brands fa-facebook"></i></a>                                    
+                                </div>
+                                <div class="div-login-4">
+                                 <span>O</span>   
+                                </div>
+                                <div class="div-login-5">
+                                 <label for="us">Usuario</label>   
+                                </div>
+                                <div class="div-login-6">
+                                 <input type="text" placeholder="Usuario">   
+                                </div>                                
+                                <div class="div-login-7">
+                                 <label for="contra">Contraseña</label>   
+                                </div>
+                                <div class="div-login-8">
+                                 <input type="password" placeholder="Contraseña">  
+                                </div>
+                                <div class="div-login-9">
+                                 <button class="btn-ing">Ingresar</button>   
+                                </div>
+                                <div class="div-login-10">
+                                    <span>¿No tienes una cuenta?<button>Registrate</button></span>
+                                </div>
+                            </form>
+                        <div class="column"></div>
+                    </div>
+                </div>    
+                
+                
     <main>
         <section>
             <div>
