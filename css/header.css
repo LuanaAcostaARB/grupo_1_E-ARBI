@@ -1,0 +1,52 @@
+.elheader{
+    background-color: var(--color-magenta);
+}
+.logo{
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 0px;
+}
+.elnav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.menu_links{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 25px;
+    display: block;
+}
+.subitems{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+.subitems{
+    position: absolute;
+    background:var(--color-magenta);
+    align-items: center;
+}
+.subitemul:hover{
+    background-color: rgb(15,20,45);
+}
+.link1{
+    width: 180px;
+    position: relative;
+}
+.subitems{
+    position: absolute;
+    top: 0;
+}
+.subitems{
+    display: none;
+}
+.link1:hover>ul{
+    display: block;
+}
