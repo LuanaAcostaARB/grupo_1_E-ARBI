@@ -19,7 +19,7 @@ body{
     flex-direction: column;
     overflow-y: scroll;
     height: 500px;
-    background-color: var(--color-lila) ;
+    background-image: url(../imgs/fondo_videos.png);
 
 }
 
@@ -63,3 +63,81 @@ h1{
     box-shadow: 14px 9px 6px 8px rgba(0,0,0,0.75);
 }
 
+
+
+
+/* 
+ Caja de comentarios y puntuación */
+
+.contenedor3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+    
+}
+
+.opinioncb{
+    padding: 10px;
+    
+    
+}
+
+#text{
+    background-color: var(--color-rosa);
+    font-size: larger;
+}
+
+
+form {
+   display: flex;
+   justify-content: flex-start;
+  }
+  
+  form p {
+    text-align: center;
+  }
+  
+  /* tamaño de las estrellas */
+  form label {
+    font-size: 50px; 
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl; /*cambio de direccion del efecto hover*/
+    unicode-bidi: bidi-override;
+    display: flex;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+  
+  button{
+      background-color:var(--color-lila);
+      width: 150px;
+      height: 50px;
+      font-size: 20px;
+      border-radius: 10px;
+      /* border: var(--color-magenta); */
+
+  }
+  ::placeholder{
+     color: var(--color-blanco);
+  }
