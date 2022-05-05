@@ -10,9 +10,7 @@ body{
      
 }
 
-h1{
 
-}
 
 .conteiner2{
     display: flex;
@@ -24,10 +22,7 @@ h1{
     background-color: var(--color-lila) ;
 
 }
-/* contenedor de video con margen para centrar  */
-.videosc{
-  
-}
+
 
 h1{
     font-size:80px;

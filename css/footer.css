@@ -1,0 +1,40 @@
+footer{
+    background-color: var(--color-magenta);
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0;
+}
+
+footer section{
+    margin: 25px 0 
+}
+
+footer h4{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+footer i{
+    /* margin: 7px 7px 0; */
+    font-size: 25px;
+
+}
+
+
+@media (min-width: 768px){
+    
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer section{
+        width: 100%;
+    }
+    .redesca{
+        display: flex;
+        flex-direction: row;
+    }
+}

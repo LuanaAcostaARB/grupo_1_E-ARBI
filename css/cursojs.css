@@ -11,16 +11,16 @@ main{
     justify-content: center;
 }
 
-/* section{
+section{
     display: flex;
     flex-direction: column;
     
-} */
+}
 section p{
     font-size: 12px;
 }
 
- .image{
+ .imageca{
     margin-top: 20px;
     padding: 10px;
 }
@@ -28,42 +28,46 @@ img{
     width: 100%;
     border-radius: 10px;
 }
-.card{
+.cardca{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 20px;
 }
-.titulo{
+.tituloca{
     background-color: var(--color-lila);
     height: 50px;
     border-radius: 10px;
     margin: 0 25px 0px 25px;
+    
 }
-.titulo h1{
+.tituloca h1{
     padding-top: 10px;
     text-align: center;
+    font-size: 34px;
 }
 
-.info{
+.infoca{
     margin: 15px 10px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-.info h3{
+.infoca h3{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.info p{
+.infoca p{
     padding-bottom: 20px;
 }
 
-.boton{
+.botonca{
     margin-left: 100px;
 }
 
 
-.boton button{
+.botonca button{
         --glow-color: rgb(217, 176, 255);
         --glow-spread-color: rgba(191, 123, 255, 0.781);
         --enhanced-glow-color: rgb(231, 206, 255);
@@ -84,7 +88,7 @@ img{
         transition: all 0.3s;
 }
        
-.boton button::after {
+.botonca button::after {
         pointer-events: none;
         content: "";
         position: absolute;
@@ -98,7 +102,7 @@ img{
         transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
     }
        
-.boton button:hover {
+.botonca button:hover {
         color: var(--btn-color);
         background-color: var(--glow-color);
         box-shadow: 0 0 1em .25em var(--glow-color),
@@ -106,27 +110,27 @@ img{
                inset 0 0 .75em .25em var(--glow-color);
        }
        
-.boton button:active {
+.botonca button:active {
         box-shadow: 0 0 0.6em .25em var(--glow-color),
                0 0 2.5em 2em var(--glow-spread-color),
                inset 0 0 .5em .25em var(--glow-color);
 }
 
-.contenido{
+.contenidoca{
     margin: 30px 10px 10px 20px
 }
 
-.contenido h4{
+.contenidoca h4{
     margin-bottom: 10px;
     text-align: center;
 }
 
-.caja{
+.cajaca{
    
     margin: 10px 10px 10px 30px;
     text-align: center;
 }
-.logosc{
+.logosca{
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -148,22 +152,79 @@ footer{
 
 @media (min-width:361px){
 
-    .image{
+    .imageca{
         width: 70%;
         align-self: center;
     }
     
-    .card{
+    .cardca{
         align-items: center;
     }
-    /* .titulo{
-       width: 150px;
-       height: 75px;
-    } */
-    .titulo h1{
-        
+    .tituloca{
+       width: 75%;
+    }
+    .tituloca h1{
        text-align: center;
     }
+    .botonca{
+        margin: 0;
+    }
+    #vs{
+        width: 25%;
+    }
+    #node{
+        width: 25%;
+    }
+}
+@media (min-width:769px){
+    .imageca{
+        width: 50%;
+    }
+    .tituloca{
+        width: 50%;
+     }
+     #vs{
+        width: 15%;
+    }
+    #node{
+        width: 15%;
+    }
+}
+@media (min-width: 1024px){
+    section h1{
+        font-size: 30px;
+    }
+    section h3{
+        font-size: 26px;
+    }
+    section h4{
+        font-size: 24px;
+    }
+    section p{
+        font-size: 16px;
+    }
+    .caja1ca{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .imageca{
+        width: 50%;
+    }
+    .cardca{
+        width: 50%;
+    }
+    .contenidoca{
+        margin: 30px;
+    }
+    .logosca{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
 }
 
 
