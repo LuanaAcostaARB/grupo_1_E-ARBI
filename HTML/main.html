@@ -13,7 +13,7 @@
     <header class="elheader"> <!--header cuando el usuario no está logueado-->
         <nav class="elnav">
             <div class="div1MAIN">
-                <img src="../imgs/_Logo E-Arbi.png" alt="Logo de E-arbi" srcset="" class="logo">
+                <a href="../HTML/main.html"><img src="../imgs/_Logo E-Arbi.png" alt="Logo de E-arbi" srcset="" class="logo"></a>   
             </div>
                 <ul class="menu_links">
                     <li class="link1">
@@ -47,103 +47,106 @@
                     <li class="link1"><a href="./conocenos.html" class="subitemul">Conocenos</a></li>
                 </ul>
             <div class="div3MAIN">
-                <button href="#popup" class="trigger">Log in</button>
+                <button href="#" class="trigger" id="trigger">Log in</button>
             </div>
         </nav>
     </header>
                 <div class="overlay">
                     <div class="popup">
-                        <a href="" class="close"></a>
-                        <div class="column"></div>
-                            <form class="login">
-                                <div class="div-login-1">
-                                    <h1>Ingresar con...</h1>
-                                </div>
-                                <div class="div-login-2">
-                                    <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="botoncito"><i class="fa-brands fa-google"></i></a>                                    
-                                    <a href="https://www.facebook.com/" class="botoncito"><i class="fa-brands fa-facebook"></i></a>                                    
+                        <img src="../imgs/cerrar.png" class="cerrar" alt="Cerrar LogIn">
+                        <div class="column">
+                                <h1 class="titulo">Ingresar con...</h1>
+                                <div class="pags-login">
+                                    <div class="div-login-2">
+                                        <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="botoncito"><i class="fa-brands fa-google"><span> Google</span></i></a>                                    
+                                    </div>
+                                    <div class="div-login-2">    
+                                    <a href="https://www.facebook.com/" class="botoncito"><i class="fa-brands fa-facebook"> <span>Facebook</span></i></a>                                    
+                                    </div>
                                 </div>
                                 <div class="div-login-4">
                                  <span>O</span>   
-                                </div>
-                                <div class="div-login-5">
-                                 <label for="us">Usuario</label>   
-                                </div>
-                                <div class="div-login-6">
-                                 <input type="text" placeholder="Usuario">   
-                                </div>                                
-                                <div class="div-login-7">
-                                 <label for="contra">Contraseña</label>   
-                                </div>
-                                <div class="div-login-8">
-                                 <input type="password" placeholder="Contraseña">  
-                                </div>
-                                <div class="div-login-9">
-                                 <button class="btn-ing">Ingresar</button>   
-                                </div>
-                                <div class="div-login-10">
-                                    <span>¿No tienes una cuenta?<button>Registrate</button></span>
-                                </div>
+                                </div> 
+                            <form class="login"> 
+                                 <input type="text" placeholder="Usuario" class="input-log">                                                                                      
+                                 <input type="password" placeholder="Contraseña" class="input-log">  
+                                 <button class="btn-ing"><a href="#">Ingresar</a></button>   
+                                <span>¿No tienes una cuenta?<a href="../HTML/formulario.html" class="regs">Registrate</a></span>
                             </form>
-                        <div class="column"></div>
+                        </div>
+                        <div class="column2">
+                            <p class="texto-c2">¡Bienvenido a E-ARBI! Disfruta de nuestros cursos</p>
+                            <img src="../imgs/foto-login.png" alt="Foto de login" class="fotiton-c2">
+                        </div> 
                     </div>
-                </div>    
-                
-                
+                </div> 
+                <script>
+                    document.getElementById("trigger").addEventListener("click", function(){
+                        document.querySelector(".overlay").style.display= "flex"; //script para que aparezca el pop up del login o la ventana emergente
+                    });
+                    document.querySelector(".cerrar").addEventListener("click", function(){
+                        document.querySelector(".overlay").style.display= "none";
+                    })
+                </script>         
     <main>
-        <section>
-            <div>
-                <h2>Registrarse</h2>
-                <button>Registrarse con Google</button>
-                <button>Registrarse con Facebook</button>
-                <span>o</span>
-                <button>Registrarse con el email</button>
+        <section class="section-principal">
+            <div class="caja-main1">
+                <h2 class="titulo-main">
+                        <span class="titulo-main title-word-1">Explora</span>
+                        <span class="titulo-main title-word-2">nuestros</span>
+                        <span class="titulo-main title-word-3">cursos</span>
+                </h2>
+                <button class="boton-main"><a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">Registrarse con Google</a></button>
+                <button class="boton-main"><a href="https://www.facebook.com/">Registrarse con Facebook</a></button>
+                <span class="span-o">o</span>
+                <a href="../HTML/formulario.html" class="link-form-main">Registrate con tu email</a> 
             </div>
-            <div>
-                <img src="" alt="" srcset="">
+            <div class="caja-main2">
+                <img src="../imgs/main-learning.jpg" alt="Imagen animada de e-learning" srcset="" class="foto-main">
             </div>
         </section>
-        <section>
-                <h2>Cursos populares</h2>
-                <div>
-                    <button>HTML</button>
-                    <button>JS</button>
-                    <button>SQL</button>
-                    <button>CSS</button>
-                </div>
-        </section>
-        <section>
-            <h2>Opiniones</h2>
-            <div class="carrousel-main">
-                <div>
-                    <a href="">Opinion</a>
-                </div>
-                <div>
-                    <a href="">Opinion</a>
-                </div>
-                <div>
-                    <a href="">Opinion</a>
-                </div>
-                <div>
-                   <a href="">Opinion</a> 
-                </div>
-                <div>
-                   <a href="">Opinion</a> 
-                </div>
-                <div>
-                    <a href="">Opinion</a>
-                </div>   
+        <section class="section-main2">
+            <div class="caja0-main3">
+                <h2 class="titulo-s2">Cursos populares</h2>
             </div>
-            <a class="carousel-prev" href="#carousel-example" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-next" href="#carousel-example" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="caja-main3">
+                <a href="../HTML/cursoHTML.html" class="btn-caja3">HTML</a>
+                <a href="../HTML/cursojs.html" class="btn-caja3">JS</a>
+                <a href="../HTML/cusoSQL.html" class="btn-caja3">SQL</a>
+                <a href="../HTML/cursoCSS.html" class="btn-caja3">CSS</a>
+            </div>
         </section>
-        <section>
+        <section id="section-ops" class="lasOpiniones">
+            <div class="container-ops">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="testmonial_slider_area text-center owl-carousel">
+                            <div class="box-area">	
+                                <div class="img-area">
+                                    <img src="../imgs/foto-op1.jpg" alt="Foto opinión 1">
+                                </div>	
+                                <h5>Soledad Vallejos</h5>									
+                                <p class="content">
+                                   ¡Excelentes cursos! 
+                                </p>
+                            </div>
+                            <div class="box-area">	
+                                <div class="img-area">
+                                    <img src="../imgs/foto-op2.jpg" alt="Foto opinión 2">
+                                </div>	
+                                <h5>Person's name</h5>									
+                                <p class="content">
+                                    Lorem Ipsum is simply dummy text of the printing and 
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    ever since
+                                </p>
+                            </div>   
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section class="">
             <h2>Preguntas frecuentes</h2>
             <div>
                 <button>Pregunta 1</button>
