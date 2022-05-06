@@ -6,8 +6,7 @@ body{
 .conteiner1{
     display: flex; 
     align-items:center;
-    justify-content: space-evenly;
-     
+    justify-content: space-evenly;    
 }
 
 
@@ -18,13 +17,56 @@ body{
     padding-top: 100px ;
     flex-direction: column;
     overflow-y: scroll;
-    height: 500px;
+    height: 800px;
     background-image: url(../imgs/fondo_videos.png);
 
 }
 
 
-h1{
+.conteiner2 iframe{
+    cursor: pointer;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 0.2s linear;
+}
+
+iframe:hover{
+    transform: scale(1.1);
+}
+
+.conteiner2 .popupVideo{
+ position: fixed;
+ top: 0; left:0;
+ z-index: 100;
+ height: 100%;
+ width: 100%;
+ display: none;
+}
+
+.conteiner2 .popupVideo iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     width: 750px;
+     border-radius:5px;
+     object-fit: cover;
+
+}
+
+.conteiner2 .popupVideo span{
+    position: absolute;
+    top:5px; 
+    right: 20px;
+    font-size:50px;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+
+.caja h1{
     font-size:80px;
     /* background-color:var(--color-lila) ; */
     -webkit-box-shadow: 14px 9px 27px 0px rgba(0,0,0,0.75);
@@ -48,7 +90,8 @@ h1{
     display: flex;
     justify-content: center;
     background-color: var( --color-magenta);
-    padding: 40px;     
+    padding: 40px; 
+    font-size: 30px;    
 }
 
 .contenidocb{
@@ -58,6 +101,8 @@ h1{
 }
 
 .imgjscb{
+    margin-top: 30px;
+    width: 200px;
     -webkit-box-shadow: 14px 9px 6px 8px rgba(0,0,0,0.75);
     -moz-box-shadow: 14px 9px 6px 8px rgba(0,0,0,0.75);
     box-shadow: 14px 9px 6px 8px rgba(0,0,0,0.75);
@@ -77,6 +122,11 @@ h1{
     padding-bottom: 50px;
    
     
+}
+
+
+.titulocb3{
+    font-size: 40px;
 }
 
 .opinioncb{
@@ -141,3 +191,10 @@ form {
   ::placeholder{
      color: var(--color-blanco);
   }
+
+
+@media (max-width:768px) {
+    .conteiner2 .popupVideo iframe{
+        width: 95%;
+    }
+}

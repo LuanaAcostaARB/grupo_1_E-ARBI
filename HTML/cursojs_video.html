@@ -6,24 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/plataformadevideo.css" type="text/css">
     <link rel="stylesheet" href="../css/general.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/header.css" type="text/css">
+    <link rel="stylesheet" href="../css/footer.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
 
     <title>Curso Javascript</title>
 </head>
 <body>
-    <header> <!--header cuando el usuario no está logueado-->
-        <nav>
+    <header class="elheader"> <!--header cuando el usuario no está logueado-->
+        <nav class="elnav">
             <div class="div1MAIN">
-                <img src="../grupo_1_E-ARBI/imgs/_Logo E-Arbi.png" alt="Logo de E-arbi" srcset="" class="logo">
+                <a href="../HTML/main.html"><img src="../imgs/_Logo E-Arbi.png" alt="Logo de E-arbi" srcset="" class="logo"></a>   
             </div>
-            <div class="div2MAIN">
-                <button>Menú</button>
-            </div>
+                <ul class="menu_links">
+                    <li class="link1">
+                        <a href="#" class="subitemul">Cursos</a>
+                        <ul class="subitems">
+                            <li class="item">
+                                <a href="../HTML/cursoCSS.html" class="subitemul">CSS</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cursoHTML.html" class="subitemul">HTML</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cusoSQL.html" class="subitemul">SQL</a>
+                            </li>
+                            <li class="item">
+                                <a href="../HTML/cursojs.html" class="subitemul">JS</a>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="link1"> 
+                        <a href="#" class="subitemul">Equipo</a>
+                        <ul class="subitems">
+                            <li class="item5">
+                                <a href="../HTML/equipo.html" class="subitemul">Profesionales</a>
+                            </li>
+                            <li class="item6">
+                                <a href="../HTML/Alumnos.html" class="subitemul">Alumnos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link1"><a href="./conocenos.html" class="subitemul">Conocenos</a></li>
+                </ul>
             <div class="div3MAIN">
-                <button>Log in</button>
+                <button href="#" class="trigger" id="trigger">Log in</button>
             </div>
         </nav>
     </header>
+                
 
 
 <!-- Titulo caja -->
@@ -37,28 +70,45 @@
 
     <div class="conteiner2">
         <div class="videosc">
-
-        <div class="tituloc"><span>Clase 1</span></div>
-        <div><a href="../HTML/plataformavideoJs.html"><img src="../imgs/jsvideo1.jpg" alt="miniaturavideo" width="400px"></a></a>
+     <div class="tituloc"><span>Clase 1</span></div>
+        <div><iframe src="https://drive.google.com/file/d/19yNu4tSk02yZEHFfcoNlPLsZ1NRVz_6_/preview" allow="autoplay" width="640px" height="480px"></iframe>
             <div class="contenidocb"><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, beatae esse aspernatur eum ab deleniti ducimus debitis vitae laborum sed qui atque obcaecati aut corrupti fugiat, ad nesciunt sit </span></div>
         </div>
         <div class="tituloc"><span>Clase 2</span></div>
-        <a href="../HTML/plataformadevideojs2.html"><img src="../imgs/jsvideo2.jpg" alt="miniaturavideo" width="400px"></a>
+        <iframe src="https://drive.google.com/file/d/18u61BS_h6RbwXtmv0sAxnggXgHjl-ptD/preview" width="640" height="480" allow="autoplay"></iframe>
             <div class="contenidocb"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore hic ipsum ipsam, quia ab libero quae, quasi at maiores sapiente voluptatum obcaecati reprehenderit adipisci itaque quas, id vitae eligendi qui?</span></div>
         
 
-        <div class="tituloc"><span>Clase 3</span></div>
-        <div><a href="../HTML/plataformadevideojs3.html"><img src="../imgs/jsvideo3.jpg" alt="miniaturavideo" width="400px"></a>
+        <div class="tituloc"><span>Clase 3</span></div><iframe src="https://drive.google.com/file/d/1kS9I2FG4SlY5PyYACHikyCXo8HGp6_hi/preview" width="640" height="480" allow="autoplay"></iframe>
+        <div>
             <div class="contenidocb"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt amet quos, exercitationem fugit autem, libero esse neque sequi recusandae, debitis ex iusto consequatur eligendi quae ipsa explicabo nihil. Veritatis.</span></div>
         </div>
-        <div class="tituloc"><span>Clase 4</span></div>
-        <div><a href="../HTML/plataformadevideo4.html"><img src="../imgs/jsvideo4.jpg" alt="miniaturavideo" width="400px"></a>
+        <div class="tituloc"><span>Clase 4</span></div><iframe src="https://drive.google.com/file/d/1Y60sEnfFGPMoArRJ3iMW4-WflPAzZql8/preview" width="640" height="480" allow="autoplay"></iframe>
+        <div>
             <div class="contenidocb"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus ex quis, itaque placeat temporibus maiores aliquid alias ut. Atque laudantium harum aut libero dolorem quam dolorum aperiam fugiat odit?</span></div>
         </div>
     </div>
-     </div>
 
- 
+    <div class="popupVideo">
+        <span> &times;</span>
+        <iframe src="https://drive.google.com/file/d/19yNu4tSk02yZEHFfcoNlPLsZ1NRVz_6_/preview" allow="autoplay" width="640px" height="480px"></iframe>
+
+    </div>
+     </div>
+    
+
+    <script>
+        document.querySelectorAll(`.conteiner2 .popupVideo iframe`).forEach(vid=> {
+            vid.onclick= () => {
+            document.querySelector(`popupVideo`).style.display= block;
+            document.querySelector(`popupVideo iframe`).src= vid.getAttribute(`src`);
+        }    
+        });
+
+
+    </script>
+
+    
      <div class="contenedor3">
         <div class="titulocb3"><h3>Dejanos tu opinión</h3></div>
         <form>
