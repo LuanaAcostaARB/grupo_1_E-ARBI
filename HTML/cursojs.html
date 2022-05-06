@@ -55,6 +55,43 @@
             </div>
         </nav>
     </header>
+    <div class="overlay">
+        <div class="popup">
+            <img src="../imgs/cerrar.png" class="cerrar" alt="Cerrar LogIn">
+            <div class="column">
+                    <h1 class="titulo">Ingresar con...</h1>
+                    <div class="pags-login">
+                        <div class="div-login-2">
+                            <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="botoncito"><i class="fa-brands fa-google"><span> Google</span></i></a>                                    
+                        </div>
+                        <div class="div-login-2">    
+                        <a href="https://www.facebook.com/" class="botoncito"><i class="fa-brands fa-facebook"> <span>Facebook</span></i></a>                                    
+                        </div>
+                    </div>
+                    <div class="div-login-4">
+                     <span>O</span>   
+                    </div> 
+                <form class="login"> 
+                     <input type="text" placeholder="Usuario" class="input-log">                                                                                      
+                     <input type="password" placeholder="Contraseña" class="input-log">  
+                     <button class="btn-ing"><a href="#">Ingresar</a></button>   
+                    <span>¿No tienes una cuenta?<a href="../HTML/formulario.html" class="regs">Registrate</a></span>
+                </form>
+            </div>
+            <div class="column2">
+                <p class="texto-c2">¡Bienvenido a E-ARBI! Disfruta de nuestros cursos</p>
+                <img src="../imgs/foto-login.png" alt="Foto de login" class="fotiton-c2">
+            </div> 
+        </div>
+    </div> 
+    <script>
+        document.getElementById("trigger").addEventListener("click", function(){
+            document.querySelector(".overlay").style.display= "flex"; //script para que aparezca el pop up del login o la ventana emergente
+        });
+        document.querySelector(".cerrar").addEventListener("click", function(){
+            document.querySelector(".overlay").style.display= "none";
+        })
+    </script>
     <main>
         <section class="caja1ca">
             <div class="imageca">
