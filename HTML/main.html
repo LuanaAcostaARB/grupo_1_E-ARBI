@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/main.css" type="text/css">
     <link rel="stylesheet" href="../css/general.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../JS/main.js"></script>
     <title>E-ARBI</title>
 </head>
 <body>
@@ -116,57 +117,123 @@
                 <a href="../HTML/cursoCSS.html" class="btn-caja3">CSS</a>
             </div>
         </section>
+        
         <section id="section-ops" class="lasOpiniones">
-            <div class="container-ops">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="testmonial_slider_area text-center owl-carousel">
-                            <div class="box-area">	
-                                <div class="img-area">
-                                    <img src="../imgs/foto-op1.jpg" alt="Foto opinión 1">
-                                </div>	
-                                <h5>Soledad Vallejos</h5>									
+                    <div class="slider">
+                        <h2 class="titulo-sl">¡Opiniones de devjumpers!</h2>
+                        <hr>
+                        <input type="radio" name="slides" id="radio1" checked>
+                        <input type="radio" name="slides" id="radio2">
+                        <input type="radio" name="slides" id="radio3">
+                        <ul class="slides">
+                            <li class="slide">
                                 <p class="content">
-                                   ¡Excelentes cursos! 
+                                  <q class="cita">¡Excelentes cursos! </q> 
+                                  <span class="autor">
+                                     <img src="../imgs/foto-op1.jpg" alt="Foto opinión 1" class="foto-sl"> 
+                                        Soledad Vallejos
+                                    </span>
+                                </p>                                
+                            </li>
+                            <li class="slide">
+                                <p class="content">
+                                  <q class="cita">Increíble el curso de CSS, hiper recomendable. </q> 
+                                  <span class="autor">
+                                     <img src="../imgs/foto-op2.jpg" alt="Foto opinión 1" class="foto-sl"> 
+                                        Natali Lescano
+                                    </span>
+                                </p>                                
+                            </li>
+                            <li class="slide">
+                                <p class="content">
+                                  <q class="cita">Muy buenas clases dictadas por los profes.</q> 
+                                  <span class="autor">
+                                     <img src="../imgs/foto-op3.jpg" alt="Foto opinión 1" class="foto-sl"> 
+                                       Macarena Leiva
+                                    </span>
+                                </p>                                
+                            </li>                            
+                        </ul> 
+                        <div class="navegador-sl">
+                            <label for="radio1" id="radioSel1"></label>
+                            <label for="radio2" id="radioSel2"></label>
+                            <label for="radio3" id="radioSel3"></label>
+                        </div>                      
+                    </div>
+        </section>
+        <h2 class="titulo-elFAQ">Preguntas freguentes</h2>
+        <section class="elFAQ">
+                <div class="container-faq">
+                    <div class="acordeon">
+                        <div class="item-acordeon" id="item-ac1">
+                            <a href="#preg1" class="link-acor">
+                                ¿Cuales son los fuertes de E-ARBI?
+                                <i class="fa-solid fa-caret-down"></i>
+                                <i class="fa-solid fa-caret-up"></i>
+                            </a>
+                            <div class="resp-ac">
+                                <p>
+                                        Sus fuertes son la accesibilidad, sus clases gratuitas las cuales se pueden ver en la modalidad que quieras y se adaptan a tus tiempos!
                                 </p>
                             </div>
-                            <div class="box-area">	
-                                <div class="img-area">
-                                    <img src="../imgs/foto-op2.jpg" alt="Foto opinión 2">
-                                </div>	
-                                <h5>Person's name</h5>									
-                                <p class="content">
-                                    Lorem Ipsum is simply dummy text of the printing and 
-                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-                                    ever since
+                        </div>
+                        <div class="item-acordeon" id="item-ac2">
+                            <a href="#preg2" class="link-acor">
+                                ¿A la larga  hay que pagar algún bono por las clases?
+                                <i class="fa-solid fa-caret-down"></i>
+                                <i class="fa-solid fa-caret-up"></i>
+                            </a>
+                            <div class="resp-ac">
+                                <p>
+                                    La respuesta es... ¡No! Todas las clases están a disposición de todo el mundo. 
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="item-acordeon" id="item-ac3">
+                            <a href="#preg3" class="link-acor">
+                                ¿Tengo que saber de programación para realizar los cursos?
+                                <i class="fa-solid fa-caret-down"></i>
+                                <i class="fa-solid fa-caret-up"></i>
+                            </a>
+                            <div class="resp-ac">
+                                <p>
+                                    Para nada, todos los cursos son para principiantes sin nada de conocimiento previo. 
                                 </p>
-                            </div>   
+                                
+                            </div>
+                        </div>
+                        <div class="item-acordeon" id="item-ac4">
+                            <a href="#preg1" class="link-acor">
+                                ¿Quienes realizaron esta página?
+                                <i class="fa-solid fa-caret-down"></i>
+                                <i class="fa-solid fa-caret-up"></i>
+                            </a>
+                            <div class="resp-ac">
+                                <p>
+                                  ¡El grupo 1 de Devjump! Camila Aguirre, Carolina Beer, Victoria Gonzalez y Luana Acosta.  
+                                </p> 
+                            </div>
                         </div>
                     </div>
-                </div>  
-            </div>
-        </section>
-        <section class="">
-            <h2>Preguntas frecuentes</h2>
-            <div>
-                <button>Pregunta 1</button>
-                <button>Pregunta 2</button>
-                <button>Pregunta 3</button>
-                <button>Pregunta 4</button>
-                <button>Pregunta 5</button>   
-            </div>
+                </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <div>
-            <!--acá irían como en una lista todos los href de los footer-->
+            
+            <section>
+                <h4>Seguinos</h4>
+                <div class="redesca">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+            </section>
+        
         </div>
-        <div>
 
-        </div>
-        <div>
-
-        </div>
     </footer>
 </body>
 </html>

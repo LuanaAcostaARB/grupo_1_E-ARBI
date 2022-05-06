@@ -1,5 +1,5 @@
 body{
-    background-color: var(--color-violetaFuerte);
+    background-color: #260B2C;
 }
 .elheader{
     background:linear-gradient(to bottom, var(--color-magenta) 5%, #883878 100%);
@@ -362,4 +362,216 @@ body{
 .btn-caja3:active {
 	position:relative;
 	top:1px;
+}
+.slider{
+    max-width: 750px;
+    margin: auto;
+    margin-top: 90px;
+    position: relative;
+    background-color: rgb(251, 249, 249);
+    text-align: center;
+    padding: 15px 0;
+    overflow: hidden;
+    height: 330px;
+    border-radius: 15px;
+}
+.titulo-sl{
+    font-size: 40px;
+    color: var(--color-magenta);
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.slider hr{
+    width: 30%;
+    height: 3px;
+    background-color: #260B2C;
+    border: none;
+    border-radius: 3px;
+    margin-left: 255px;
+}
+.slider .slides{
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    transition: all .8s cubic-bezier(1,0,0,1);
+}
+.slide{
+    width: 25%;
+    position: relative;
+    float: left;
+}
+.content{
+    margin-top: 0;
+}
+.cita{
+    max-width: 90%;
+    margin:auto;
+    color: rgb(93, 80, 97);
+    font-size: 25px;
+}
+.foto-sl{
+    width: 55px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right:10px ;
+}
+.autor{
+    margin-top:20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(71, 46, 79);
+    display: block;
+}
+.navegador-sl{
+    display: block;
+    list-style: none;
+    text-align: center;
+    border: 40px;
+    position: absolute;
+    width: 102px;
+    left: 50%;
+    margin-left: -52px;
+}
+.slider input{
+    display: none;
+}
+.navegador-sl label{
+    float: left;
+    margin: 6px;
+    margin-top: 30px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid 2px var(--color-magenta);
+}
+#radio1:checked ~ .slides{
+transform: translateX(0%);
+}
+#radio2:checked ~ .slides{
+    transform: translateX(-25%);
+}
+#radio3:checked ~ .slides{
+        transform: translateX(-50%);
+}
+.navegador-sl label:hover{
+    cursor: pointer;
+}
+#radio1:checked ~ .navegador-sl label#radioSel1,
+#radio2:checked ~ .navegador-sl label#radioSel2,
+#radio3:checked ~ .navegador-sl label#radioSel3{
+    background-color: var(--color-magenta) ;
+}
+.titulo-elFAQ{
+    margin-top: 75px;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+.elFAQ{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.container-faq{
+    width: 100%;
+    max-width: 80rem;
+    max-width: 0 auto;
+    padding: 0 1.5rem;
+}
+.item-acordeon{
+    background-color: #e840adb5;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow:  0 5px 10px 10px rgba(114, 39, 114, 0.592);
+}
+.link-acor{
+    width: 100%;
+    font-size: 1.6rem;
+    color: #f0a80d;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1rem 0;
+}
+.link-acor i{
+    padding: 1rem 0;
+}
+.link-acor .fa-caret-up{
+    display: none;
+}
+.resp-ac{
+    overflow: hidden;
+    max-height: 0;
+     position: relative;
+    background-color: #d813b4;
+    transition: max-height 650ms;
+}
+.resp-ac::before{
+    content: " ";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    top: 50%;
+    left: 0;
+    background-color: #6b1a5f;
+    transform: translateY(-50%);
+}
+.resp-ac p{
+    color: white;
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+#item-ac1:target .resp-ac{
+    max-height: 80px;
+}
+
+footer{
+    background-color: var(--color-magenta);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin: 0;
+}
+
+footer section{
+    margin: 25px 0 
+}
+
+footer h4{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+footer i{
+    /* margin: 7px 7px 0; */
+    font-size: 25px;
+
+}
+
+
+@media (min-width: 768px){
+    
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer section{
+        width: 100%;
+    }
+    .redesca{
+        display: flex;
+        flex-direction: row;
+    }
 }
