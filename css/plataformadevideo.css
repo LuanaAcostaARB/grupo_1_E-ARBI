@@ -98,6 +98,12 @@ iframe:hover{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 500px;
+    color: var(--color-violetaFuerte);
+}
+
+.contenidocb span{
+    color: var(--color-violetaFuerte);
+    font-size: 20px;
 }
 
 .imgjscb{
@@ -198,3 +204,4 @@ form {
         width: 95%;
     }
 }
+
