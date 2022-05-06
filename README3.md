@@ -30,3 +30,31 @@ Decidimos estar en una meet mientras trabajabamos para que al momento en que sur
 ## 29/04:
 •  Retrospectiva - Review.
 <br>
+
+—Fin de semana—
+<br>
+
+## 02/05
+
+• Estuvimos haciendo pequeños avances en el proyecto, hablamos de lo que se nos había señalado en la anterior retrospectiva para ver en que debíamos prestar atención. Por fuera del proyecto nos tomamos el resto de la tarde para poder repasar con los ejercicios de JS para el examen programado para la semana.
+<br>
+
+## 03/05
+
+• En este día nos dedicamos a tener terminado ciertas partes del proyecto en el que veníamos atrasadas, además de que debíamos tener tiempo seguir repasando JS. 
+<br>
+
+## 04/05
+
+• Este día fue más distendido debido a que la mayoría del grupo estuvimos en la oficina y fue el día que tuvimos el examen junto con una reunión con el cliente, pero aún así pudimos dedicar un tiempo al proyecto en la que cada una siguió avanzando con sus partes y pudimos ayudarnos con algunas cositas que no iban como se suponían.
+<br>
+
+## 05/05
+
+• Pusimos en común lo que pudimos ir haciendo en la semana y charlamos sobre lo que tenemos que ya definir para los últimos días antes de la última presentación. Fuera del proyecto, nos sacamos algunas dudas de la clase de JS.
+<br>
+
+## 06/05
+
+• Retrospectiva - Review.
+
