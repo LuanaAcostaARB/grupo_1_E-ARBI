@@ -467,111 +467,30 @@ transform: translateX(0%);
 #radio3:checked ~ .navegador-sl label#radioSel3{
     background-color: var(--color-magenta) ;
 }
-.titulo-elFAQ{
-    margin-top: 75px;
-    margin-bottom: 50px;
-    font-size: 35px;
-}
 .elFAQ{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 200px;
+    margin-top: 70px;
 }
-.container-faq{
-    width: 100%;
-    max-width: 80rem;
-    max-width: 0 auto;
-    padding: 0 1.5rem;
+.elFAQ h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
-.item-acordeon{
-    background-color: #e840adb5;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    box-shadow:  0 5px 10px 10px rgba(114, 39, 114, 0.592);
+.acordeon{
+    width: 95%;
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 10px;
 }
-.link-acor{
-    width: 100%;
-    font-size: 1.6rem;
-    color: #f0a80d;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    padding: 1rem 0;
-}
-.link-acor i{
-    padding: 1rem 0;
-}
-.link-acor .fa-caret-up{
-    display: none;
+.acordeon details{
+    padding: 20px;
+    background-color: var(--color-magenta);
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 0 2px rgb(45, 40, 49);
 }
 .resp-ac{
-    overflow: hidden;
-    max-height: 0;
-     position: relative;
-    background-color: #d813b4;
-    transition: max-height 650ms;
-}
-.resp-ac::before{
-    content: " ";
-    position: absolute;
-    width: .6rem;
-    height: 90%;
-    top: 50%;
-    left: 0;
-    background-color: #6b1a5f;
-    transform: translateY(-50%);
-}
-.resp-ac p{
-    color: white;
-    font-size: 1.4rem;
-    padding: 2rem;
-}
-#item-ac1:target .resp-ac{
-    max-height: 80px;
-}
-
-footer{
-    background-color: var(--color-magenta);
-    color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    margin: 0;
-}
-
-footer section{
-    margin: 25px 0 
-}
-
-footer h4{
-    text-transform: capitalize;
-    margin-bottom: 5px;
-    font-size: 18px;
-}
-
-footer i{
-    /* margin: 7px 7px 0; */
-    font-size: 25px;
-
-}
-
-
-@media (min-width: 768px){
-    
-    footer {
-        display: flex;
-        justify-content: center;
-    }
-    
-    footer section{
-        width: 100%;
-    }
-    .redesca{
-        display: flex;
-        flex-direction: row;
-    }
+    background: rgb(80, 13, 80);
+    margin-top: 10px;
+    font-size: 20px;
 }
