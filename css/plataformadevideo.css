@@ -30,8 +30,38 @@ body{
     transition: 0.2s linear;
 }
 
+/* Barra de caja contenedora de videos */
+
+.conteiner2::-webkit-scrollbar{
+    width: 20px;
+    background-color: var(--color-rosa);
+}
+
+.conteiner2::-webkit-scrollbar:vertical {
+    width:20px;
+}
+
+.conteiner2::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+
+ .conteiner2::-webkit-scrollbar-thumb {
+    background-color: var(--color-rosa);
+    border-radius: 20px;
+    border: 2px solid var(--color-lila);
+}
+
+.conteiner2::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+
+
+/* hover videos */
+
 iframe:hover{
-    transform: scale(1.1);
+    transform: scale(1.6);
 }
 
 .conteiner2 .popupVideo{
@@ -89,9 +119,10 @@ iframe:hover{
 .caja1{
     display: flex;
     justify-content: center;
-    background-color: var( --color-magenta);
+    background-color: var(--color-magenta);
     padding: 40px; 
-    font-size: 30px;    
+    font-size: 30px;  
+    background-image: radial-gradient(circle at 49.14% 51.23%, #f53673 0, #e52d77 10%, #d22579 20%, #bb1e77 30%, #a21872 40%, #86116a 50%, #6b0b60 60%, #530857 70%, #3d074e 80%, #2a0746 90%, #17053f 100%);  
 }
 
 .contenidocb{
