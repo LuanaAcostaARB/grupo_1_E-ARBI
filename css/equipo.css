@@ -1,3 +1,11 @@
+body{
+    margin:0%;
+    background-color:#260B2C;
+    color:aliceblue;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+
 .elheader{
     background:linear-gradient(to bottom, var(--color-magenta) 5%, #883878 100%);
 }
@@ -230,12 +238,7 @@
     max-width: 100%;
     margin-top: -122px;
 }
-body{
-    margin:0%;
-    background-color:#260B2C;
-    color:aliceblue;
-    font-family: 'Anonymous Pro', monospace;
-}
+
 .titulovg{
     display:flex;
     
@@ -255,7 +258,7 @@ body{
 }
 
 .equipo{
-    font-size: 70px;
+    font-size: 50px;
 }
 
 
@@ -355,6 +358,7 @@ body{
 }
 
 .boton1{
+    padding:1%;
     box-shadow:
        inset 0 -3em 3em rgba(0,0,0,0.1),
              0 0  0 2px #A25DA5,
@@ -365,6 +369,7 @@ body{
 }
 
 .boton2{
+    padding:1%;
     box-shadow:
        inset 0 -3em 3em rgba(0,0,0,0.1),
              0 0  0 2px #A25DA5,
