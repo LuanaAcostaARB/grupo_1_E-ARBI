@@ -467,57 +467,23 @@ transform: translateX(0%);
 #radio3:checked ~ .navegador-sl label#radioSel3{
     background-color: var(--color-magenta) ;
 }
+
 .elFAQ{
-    margin-top: 70px;
-}
-.elFAQ h2{
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-.acordeon{
     width: 95%;
     max-width: 1140px;
     margin: auto;
-    margin-top: 10px;
 }
 .acordeon details{
-    padding: 20px;
+    padding: 10px;
     background-color: var(--color-magenta);
     margin-bottom: 10px;
     cursor: pointer;
     font-size: 20px;
-    box-shadow: 0 0 2px rgb(45, 40, 49);
+    box-shadow: 0px 0px 2px rgb(0, 0,0 / 20%);
 }
 .resp-ac{
-<<<<<<< HEAD
-    background: rgb(80, 13, 80);
+    background-color: #f511da;
     margin-top: 10px;
-    font-size: 20px;
-=======
-    overflow: hidden;
-    max-height: 0;
-     position: relative;
-    background-color: #d813b4;
-    transition: max-height 650ms;
-}
-.resp-ac::before{
-    content: " ";
-    position: absolute;
-    width: .6rem;
-    height: 90%;
-    top: 50%;
-    left: 0;
-    background-color: #6b1a5f;
-    transform: translateY(-50%);
-}
-.resp-ac p{
-    color: white;
-    font-size: 1.4rem;
-    padding: 2rem;
-}
-#item-ac1:target .resp-ac{
-    max-height: 80px;
 }
 
 
@@ -572,5 +538,4 @@ footer i{
         flex-direction: row;
     }
     
->>>>>>> 1be6d8fcbc9cbf8f43daeb71f60898417bf61cf0
 }
