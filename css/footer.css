@@ -5,9 +5,21 @@ footer{
     padding-top: 10px;
     margin: 0;
 }
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+footer img{
+    width: 150px;
+}
 
-footer section{
-    margin: 25px 0 
+.footer section{
+    align-items: center;
+    margin: 25px 20px 
+}
+#seguinos{
+    align-items: center;
 }
 
 footer h4{
@@ -37,4 +49,5 @@ footer i{
         display: flex;
         flex-direction: row;
     }
+    
 }

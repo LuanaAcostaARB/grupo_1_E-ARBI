@@ -1,0 +1,13 @@
+
+
+.gifRueditas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px auto;
+    width: 500px;
+    height: 500px;
+}
+.gifRueditas img{
+    width: 100%;
+}
