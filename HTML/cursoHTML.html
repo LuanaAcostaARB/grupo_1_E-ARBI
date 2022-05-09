@@ -14,9 +14,10 @@
 <body>
     <!-- <header class="elheader"> -->
     <!--header cuando el usuario no está logueado-->
-    <header><nav class="elnav">
+    <header class="elheader"> <!--header cuando el usuario no está logueado-->
+        <nav class="elnav">
             <div class="div1MAIN">
-                <img src="../imgs/_Logo E-Arbi.png" alt="Logo de E-arbi" srcset="" class="logo">
+                <a href="../HTML/main.html"><img src="../imgs/_Logo E-Arbi.png" alt="Logo de E-arbi" srcset="" class="logo"></a>   
             </div>
                 <ul class="menu_links">
                     <li class="link1">
@@ -29,7 +30,7 @@
                                 <a href="../HTML/cursoHTML.html" class="subitemul">HTML</a>
                             </li>
                             <li class="item">
-                                <a href="../HTML/cursoSQL.html" class="subitemul">SQL</a>
+                                <a href="../HTML/cusoSQL.html" class="subitemul">SQL</a>
                             </li>
                             <li class="item">
                                 <a href="../HTML/cursojs.html" class="subitemul">JS</a>
@@ -50,10 +51,47 @@
                     <li class="link1"><a href="./conocenos.html" class="subitemul">Conocenos</a></li>
                 </ul>
             <div class="div3MAIN">
-                <button>Log in</button>
+                <button href="#" class="trigger" id="trigger">Log in</button>
             </div>
         </nav>
     </header>
+    <div class="overlay">
+        <div class="popup">
+            <img src="../imgs/cerrar.png" class="cerrar" alt="Cerrar LogIn">
+            <div class="column">
+                    <h1 class="titulo">Ingresar con...</h1>
+                    <div class="pags-login">
+                        <div class="div-login-2">
+                            <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="botoncito"><i class="fa-brands fa-google"><span> Google</span></i></a>                                    
+                        </div>
+                        <div class="div-login-2">    
+                        <a href="https://www.facebook.com/" class="botoncito"><i class="fa-brands fa-facebook"> <span>Facebook</span></i></a>                                    
+                        </div>
+                    </div>
+                    <div class="div-login-4">
+                     <span>O</span>   
+                    </div> 
+                <form class="login"> 
+                     <input type="text" placeholder="Usuario" class="input-log">                                                                                      
+                     <input type="password" placeholder="Contraseña" class="input-log">  
+                     <button class="btn-ing"><a href="#">Ingresar</a></button>   
+                    <span>¿No tienes una cuenta?<a href="../HTML/formulario.html" class="regs">Registrate</a></span>
+                </form>
+            </div>
+            <div class="column2">
+                <p class="texto-c2">¡Bienvenido a E-ARBI! Disfruta de nuestros cursos</p>
+                <img src="../imgs/foto-login.png" alt="Foto de login" class="fotiton-c2">
+            </div> 
+        </div>
+    </div> 
+    <script>
+        document.getElementById("trigger").addEventListener("click", function(){
+            document.querySelector(".overlay").style.display= "flex"; //script para que aparezca el pop up del login o la ventana emergente
+        });
+        document.querySelector(".cerrar").addEventListener("click", function(){
+            document.querySelector(".overlay").style.display= "none";
+        })
+    </script>
     <main>
         <section class="caja1ca">
             <div class="imageca">
@@ -70,9 +108,7 @@
                         Info
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error fugiat quo minus adipisci
-                        dolores natus officia quae dolorum vel? At sed incidunt ducimus error necessitatibus odit ipsa,
-                        neque dolores labore!
+                        HTML es un lenguaje de marcado esencial para el desarrollo web porque nos permite definir la estructura de la página web, el contenido que se va a mostrar en el navegador. Sus siglas significan "HyperText Markup Language" en inglés (Lenguaje de Marcado de Hipertexto).
                     </p>
                 </div>
                 <div class="botonca">
@@ -90,10 +126,7 @@
                     Contenidos del Curso
                 </h4>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi laudantium cumque magni repellendus
-                    saepe maiores, sapiente facere officiis voluptatum neque rem laborum quae deleniti corporis officia
-                    ea harum dolorem fugiat, odio eaque quia? Temporibus, eveniet sit saepe dolore praesentium hic nobis
-                    atque, aliquid minima corrupti incidunt modi ipsa dolor quidem?
+                    HTML trabaja en conjunto con CSS para crear las páginas web que usamos todos los días en el navegador. Algunas páginas web interactivas también usan JavaScript.
                 </p>
             </article>
             <article class="cajaca">
@@ -108,23 +141,26 @@
             </article>
         </section>
     </main>
-    <footer id="footer">
-        <div>
-            
-            <section>
-                <h4>Seguinos</h4>
-                <div class="redesca">
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                
-            </section>
+    <footer class="footer">
         
-        </div>
+        <section>
+            <img src="/imgs/LogoARB_PNG.png" alt="logo-arbusta">
+        </section>
+        <section id="seguinos">
+            <h4>Seguinos</h4>
+            <div class="redesca">
+                <a href="https://www.instagram.com/arbustait/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/arbustait/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/arbustaIT"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/arbusta/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </section>
+    <section>
+        <img src="/imgs/_Logo E-Arbi.png" alt="logo e-arbi">
+    </section>
+    
 
-    </footer>
+</footer>
 </body>
 
 </html>
